@@ -1,18 +1,15 @@
 import requests
 import io
+
 URL = "http://bacninh.edu.vn/?module=Content.Listing&moduleId=1015&cmd=redraw&site=45610&url_mode=rewrite&submitFormId=1015&moduleId=1015&page=&site=45610"
+
 BODY = {
     "layout": "Decl.DataSet.Detail.default",
-    "itemsPerPage": 1000,
-    "pageNo": 1,
     "service": "Content.Decl.DataSet.Grouping.select",
     "itemId": "62afcd34dc1a96b675037542",
-    "gridModuleParentId": 15,
-    "type": "Decl.DataSet",
-    "modulePosition": 0,
-    "moduleParentId": -1,
     "keyword": ""
 }
+
 SPLIT_REGEX = ' </td>  <td  >'
 
 
